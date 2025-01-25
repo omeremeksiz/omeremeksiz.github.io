@@ -6,6 +6,7 @@
         <title>Ömer Emeksiz</title>
         <meta name="author" content="Ömer Emeksiz">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="data/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
 
@@ -95,24 +96,22 @@
                                     </td>
                                 </tr>
                             </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="2"
-                                        style="text-align: center; padding-top: 20px; font-size: 0.9em; color: gray;">
-                                        Last updated: <span id="last-updated-time"></span>
-                                    </td>
-                                </tr>
-                            </tfoot>
                         </table>
                     </td>
                 </tr>
         </table>
-    </body>
 
-    <script>
-        const now = new Date();
-        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-        document.getElementById('last-updated-time').textContent = now.toLocaleDateString('en-US', options);
-    </script>
+        <footer>
+            Updated: <span id="last-updated-time"></span>
+        </footer>
+
+        <script>
+            const now = new Date();
+            const month = now.toLocaleString('en-US', { month: 'long' });
+            const year = now.getFullYear();
+            const formattedDate = `${month}, ${year}`;
+            document.getElementById('last-updated-time').textContent = formattedDate;
+        </script>
+    </body>
 
     </html>
