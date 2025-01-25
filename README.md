@@ -1,2 +1,1 @@
-# omeremeksiz.github.io
-Personal portfolio
+Based on https://jonbarron.info/ template. 
