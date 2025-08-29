@@ -72,8 +72,38 @@
                             </thead>
                             <tbody>
                                 <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-                                    <td style="padding:20px;width:25%;vertical-align:middle"> <img src="data/rl.png"
-                                            width="300" height="230" style="border-style: none"></td>
+                                    <td style="padding:20px;width:25%;vertical-align:middle"> <img
+                                            src="data/method_comp.png" width="300" height="230"
+                                            style="border-style: none"></td>
+                                    <td style="padding:30px;width:75%;vertical-align:middle">
+                                        <a href="https://ieeexplore.ieee.org/abstract/document/11111883">
+                                            <papertitle>AI-Driven Optimization of the Filling Process: A Comparison of
+                                                Reinforcement Learning Methods
+                                            </papertitle>
+                                        </a>
+                                        <br>
+                                        <strong>Ömer Sabri Emeksiz</strong>,
+                                        <a href="https://avesis.marmara.edu.tr/engin.masazade" target="_blank">Engin
+                                            Maşazade</a>,
+                                        Suat Selim
+                                        <br>
+                                        <em>IEEE SIU</em>, 2025 <br>
+                                        <p>
+                                            This paper applies reinforcement learning to industrial filling beyond PID
+                                            limits, framing control as a two-stage coarse→fine policy with rewards for
+                                            speed and accuracy. Across 1,000 simulated fills, Monte Carlo outperformed
+                                            TD and Q-Learning, reliably matching the optimal ~460 g switch point thanks
+                                            to its episodic updates that capture terminal penalties and residual
+                                            effects.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr onmouseout="ld_stop()" onmouseover="ld_start()">
+                                    <td style="padding:20px;width:25%;vertical-align:middle"> <img
+                                            src="data/conformer.svg" width="300" height="230"
+                                            style="border-style: none"></td>
                                     <td style="padding:30px;width:75%;vertical-align:middle">
                                         <a href="https://ieeexplore.ieee.org/abstract/document/11112301">
                                             <papertitle>A Convolutional Transformer Model for EEG-Driven Cybersickness
@@ -89,16 +119,14 @@
                                         <br>
                                         <em>IEEE SIU</em>, 2025 <br>
                                         <p>
-                                            This paper proposes a convolutional–transformer hybrid model for detecting
-                                            cybersickness (CS) in virtual reality (VR) experiences using EEG signals. To
-                                            address the challenge of limited and imbalanced data, the approach combines
-                                            convolutional layers for local temporal–spatial feature extraction with
-                                            transformer self-attention for long-range dependencies, while applying
-                                            K-Means clustering and data augmentation to improve generalization.
-                                            Experiments on a VR sickness dataset show that the clustered and
-                                            time-reversed augmented data yield the best performance, demonstrating that
-                                            the proposed model provides an effective and scalable solution for objective
-                                            CS detection.
+                                            This paper introduces a Convolutional-Transformer (Conformer) model for
+                                            detecting cybersickness in VR from EEG signals. The approach fuses CNNs (to
+                                            capture local spatiotemporal patterns) with self-attention (to model
+                                            long-range dependencies) and combats small, imbalanced data via targeted
+                                            augmentation and K-Means–based label clustering. Evaluated as a regression
+                                            task on the VRSA DB-FR dataset, the method attains its best accuracy with
+                                            the clustered, time-reversed data configuration—highlighting clustering as
+                                            the strongest contributor to performance and generalization.
                                         </p>
                                     </td>
                                 </tr>
